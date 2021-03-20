@@ -24,11 +24,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/coinbase/rosetta-bitcoin/bitcoin"
-	"github.com/coinbase/rosetta-bitcoin/configuration"
-	"github.com/coinbase/rosetta-bitcoin/indexer"
-	"github.com/coinbase/rosetta-bitcoin/services"
-	"github.com/coinbase/rosetta-bitcoin/utils"
+	"github.com/rosetta-vertcoin/rosetta-vertcoin/vertcoin"
+	"github.com/rosetta-vertcoin/rosetta-vertcoin/configuration"
+	"github.com/rosetta-vertcoin/rosetta-vertcoin/indexer"
+	"github.com/rosetta-vertcoin/rosetta-vertcoin/services"
+	"github.com/rosetta-vertcoin/rosetta-vertcoin/utils"
 
 	"github.com/coinbase/rosetta-sdk-go/asserter"
 	"github.com/coinbase/rosetta-sdk-go/server"
@@ -197,10 +197,10 @@ func main() {
 	}
 
 	if signalReceived {
-		logger.Fatalw("rosetta-bitcoin halted")
+		logger.Fatalw("rosetta-vertcoin halted")
 	}
 
 	if err != nil {
-		logger.Fatalw("rosetta-bitcoin sync failed", "error", err)
+		logger.Fatalw("rosetta-vertcoin sync failed", "error", err)
 	}
 }

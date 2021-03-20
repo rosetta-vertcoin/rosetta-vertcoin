@@ -1,4 +1,4 @@
-module github.com/coinbase/rosetta-bitcoin
+module github.com/rosetta-vertcoin/rosetta-vertcoin
 
 go 1.13
 

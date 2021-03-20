@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/coinbase/rosetta-bitcoin/bitcoin"
+	"github.com/rosetta-vertcoin/rosetta-vertcoin/vertcoin"
 
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/coinbase/rosetta-sdk-go/storage/encoder"
@@ -61,8 +61,8 @@ const (
 	testnetTransactionDictionary = "/app/testnet-transaction.zstd"
 	mainnetTransactionDictionary = "/app/mainnet-transaction.zstd"
 
-	mainnetRPCPort = 8332
-	testnetRPCPort = 18332
+	mainnetRPCPort = 5888
+	testnetRPCPort = 15888
 
 	// min prune depth is 288:
 	// https://github.com/bitcoin/bitcoin/blob/ad2952d17a2af419a04256b10b53c7377f826a27/src/validation.h#L84
@@ -79,7 +79,7 @@ const (
 	// persistent data.
 	DataDirectory = "/data"
 
-	bitcoindPath = "bitcoind"
+	bitcoindPath = "vertcoind"
 	indexerPath  = "indexer"
 
 	// allFilePermissions specifies anyone can do anything

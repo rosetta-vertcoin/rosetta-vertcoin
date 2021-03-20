@@ -20,7 +20,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/coinbase/rosetta-bitcoin/bitcoin"
+	"github.com/rosetta-vertcoin/rosetta-vertcoin/vertcoin"
 
 	"github.com/coinbase/rosetta-sdk-go/storage/encoder"
 	"github.com/coinbase/rosetta-sdk-go/types"
@@ -143,7 +143,7 @@ func TestLoadConfiguration(t *testing.T) {
 				assert.Contains(t, err.Error(), test.err.Error())
 			} else {
 				test.cfg.IndexerPath = path.Join(newDir, "indexer")
-				test.cfg.BitcoindPath = path.Join(newDir, "bitcoind")
+				test.cfg.BitcoindPath = path.Join(newDir, "vertcoind")
 				assert.Equal(t, test.cfg, cfg)
 				assert.NoError(t, err)
 			}

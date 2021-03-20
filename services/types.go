@@ -17,15 +17,15 @@ package services
 import (
 	"context"
 
-	"github.com/coinbase/rosetta-bitcoin/bitcoin"
+	"github.com/rosetta-vertcoin/rosetta-vertcoin/vertcoin"
 
 	"github.com/coinbase/rosetta-sdk-go/types"
 )
 
 const (
 	// NodeVersion is the version of
-	// bitcoin core we are using.
-	NodeVersion = "0.20.1"
+	// vertcoin core we are using.
+	NodeVersion = "0.17.1"
 
 	// HistoricalBalanceLookup indicates
 	// that historical balance lookup is supported.
