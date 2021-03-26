@@ -78,17 +78,17 @@ const (
 // Fee estimate constants
 // Source: https://bitcoinops.org/en/tools/calc-size/
 const (
-	MinFeeRate            = float64(0.00001) // nolint:gomnd
-	TransactionOverhead   = 12               // 4 version, 2 segwit flag, 1 vin, 1 vout, 4 lock time
-	InputSize             = 68               // 4 prev index, 32 prev hash, 4 sequence, 1 script size, ~27 script witness
-	OutputOverhead        = 9                // 8 value, 1 script size
-	P2PKHScriptPubkeySize = 25               // P2PKH size
+	MinFeeRate            = float64(0.0001) // nolint:gomnd
+	TransactionOverhead   = 12              // 4 version, 2 segwit flag, 1 vin, 1 vout, 4 lock time
+	InputSize             = 68              // 4 prev index, 32 prev hash, 4 sequence, 1 script size, ~27 script witness
+	OutputOverhead        = 9               // 8 value, 1 script size
+	P2PKHScriptPubkeySize = 25              // P2PKH size
 )
 
 var (
 	// MainnetGenesisBlockIdentifier is the genesis block for mainnet.
 	MainnetGenesisBlockIdentifier = &types.BlockIdentifier{
-		Hash: "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
+		Hash: "4d96a915f49d40b1e5c2844d1ee2dccb90013a990ccea12c492d22110489f0c4",
 	}
 
 	// MainnetParams are the params for mainnet.
@@ -96,13 +96,13 @@ var (
 
 	// MainnetCurrency is the *types.Currency for mainnet.
 	MainnetCurrency = &types.Currency{
-		Symbol:   "BTC",
+		Symbol:   "VTC",
 		Decimals: Decimals,
 	}
 
 	// TestnetGenesisBlockIdentifier is the genesis block for testnet.
 	TestnetGenesisBlockIdentifier = &types.BlockIdentifier{
-		Hash: "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943",
+		Hash: "cee8f24feb7a64c8f07916976aa4855decac79b6741a8ec2e32e2747497ad2c9",
 	}
 
 	// TestnetParams are the params for testnet.
@@ -110,7 +110,7 @@ var (
 
 	// TestnetCurrency is the *types.Currency for testnet.
 	TestnetCurrency = &types.Currency{
-		Symbol:   "tBTC",
+		Symbol:   "tVTC",
 		Decimals: Decimals,
 	}
 

@@ -1,6 +1,6 @@
 {
  "network": {
-  "blockchain": "Bitcoin",
+  "blockchain": "Vertcoin",
   "network": "Mainnet"
  },
  "online_url": "http://localhost:8080",
